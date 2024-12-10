@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    text-align: center;
+    background: #2c2c3d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    color: #e0b973;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.enemy-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+.enemy-container img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.enemy-container img.death {
+    transform: rotate(360deg) scale(0);
+    opacity: 0;
+}
+
+.health-bar {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 10px;
+    background: #d32f2f;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.health {
+    height: 100%;
+    background: #4caf50;
+    border-radius: 5px;
+}
+
+button {
+    background: #e0b973;
+    color: #1e1e2f;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #c89e60;
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 18px;
+}
